@@ -3,4 +3,14 @@
 
 <%= form_tag("/sms/send", method: "post") do %>
 <!-- add form elements here -->
+<form>
+    	<fieldset>
+            <legend>Send Text Message</legend>
+    	        Phone #:<br>
+    	        <input type="text" name="phone#"><br>
+    	        Text Message:<br>
+    	        <textarea name="textmessage" rows="10" cols="30"></textarea><br>
+    	        <input type="submit" value="Send">
+    	</fieldset>
+    </form>
 <% end %>
